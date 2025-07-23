@@ -4,7 +4,7 @@ const pass= document.getElementById("in2");
 function login(){
 if(log.value==="Aranya"){
     if(pass.value==="2014"){
-        window.location.href="index.html"
+        window.location.href="home.html"
     }
     else {
             alert("Wrong Password. Try again!");

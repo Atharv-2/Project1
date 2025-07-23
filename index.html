@@ -1,104 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Invoice</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=.box, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-  <div class="invoice-wrapper">
-
-  <!-- top1 start -->
-  <div class="top1">
-    <div class="left1">
-      <h1>ARANYA FOOD FOREST</h1>
-      <h4>Madhya Pradesh (23)</h4>
-      <h2>An Organic-Farm to Business Initiative</h2>
-    </div>
-    <div class="right1">
-      <h4><b>Name:</b> Ms. Bhavna Chandorikar</h4>
-      <h4><b>Phone no:</b> +91 9899281370</h4>
-    </div>
-  </div>
-  <!-- top1 ends -->
-
-  <!-- top2 start -->
-  <div class="top2">
-    <div class="top2a">
-      <h2>PAN: <input type="text" id="Pan" /></h2>
-      <h2>BILL OF SUPPLY</h2>
-    </div>
-    <h4>Declaration : Composition Taxable Person Not Eligible To Collect Taxes On Supplies</h4>
-
-    <div class="box1">
-      <div class="left2">
-        <div class="box1a">
-          <p id="p1"><b>Customer Details</b></p>
+    <div class="main">
+     <div class="box">
+        <div class="logo">
+            <img src="9ef93180-aa0e-4373-afb0-45fa92776014-removebg-preview_PhotoGrid.png" alt="">
         </div>
-       <!-- Example inside Customer Details box -->
-    <div class="box1b">
-      <div id="p2">M/S: <input type="text" id="customerName" /></div>
-      <div id="p3">Address: <input type="text" id="customerAddress" /></div>
-      <div id="p4">Phone: <input type="text" id="customerPhone" /></div>
-      <div id="p5">GSTIN: <input type="text" id="customerGSTIN" /></div>
-      <div id="p6">PAN: <input type="text" id="customerPAN" /></div>
-      <div id="p7">Place of <br>Supply: <input type="text" id="customerPlace" /></div>
+
+        <div class="log">
+        <p>Login: <input type="text" id="in1" placeholder="Username"></p>
+        <p>Password: <input type="password" id="in2" placeholder="Password"></p>
+        <button onclick="login();"> Let's Go</button>
+        </div>
+     </div>
     </div>
-      </div>
-
-      <div class="right2">
-        <p>Invoice Number: <input type="text" id="InvoiceNumber" /></p>
-        <p>Invoice Date: <input type="text" id="InvoiceDate" /></p>
-        <p>Reserve Charges: <input type="text" id="ReserveCharges" /></p>
-      </div>
-    </div>
-  </div>
-  <!-- top2 ends -->
-
-  <!-- top3 start -->
-  <div class="top3">
-  <div class="box2 header-row">
-    <p>Sr.No</p>
-    <p>Name of Product</p>
-    <p>HSN/SAC</p>
-    <p>QTY</p>
-    <p>Rate</p>
-    <p id="p33">Total</p>
-  </div>
-<div class="wrap">
- <div id="custom-input-rows">
-  <!-- Dynamic rows will appear here -->
-</div>
-
-<button onclick="addInputRow()" id="b1">+ Add Product</button>
-</div>
-<!-- top3 ends -->
-<div class="total">
-<p>Grand Total: ₹<span id="grand-total">0.00</span></p>
-</div>
-
-  <div class="top4">
-    <h3>Terms & Conditions:</h3>
-  </div>
-  <div class="top5">
-    <ul>
-        <li>Our Products are Organic Certified from MPSOCA</li>
-        <li> Organic Scoop No. ORG/SC/1912/003565 A.</li>
-        <li>Goods Once Sold will not be Returned back.</li>
-        <li>25% Advance Payment against P.O & balance within 4 Days on receipt of material.</li>
-        <li>36% Interest will be charged after Due Date.</li>
-    </ul>
-  </div>
-  <div class="top6">
-    <h3>Bank Details</h3>
-    <h3>A/C Name: Aranya Food Forest</h3>
-    <h3>Bank: Central Bank of India</h3>
-    <h3>A/C NO: 5507680891</h3>
-    <h3>IFSC Code: CBIN0282277</h3>
-    <h3>Branch: Sagoni Tendukheda (M.P.)</h3>
-  </div>
-  <button onclick="window.print()">🖨️ Print Invoice</button>
-  <script src="ab.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
